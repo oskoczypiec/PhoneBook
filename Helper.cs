@@ -28,7 +28,7 @@ namespace PhoneBook
                     break;
                 default:
                     Console.Out.WriteLine("Could not recognize option\nSelect one of available ones!\n");
-                    Initialize();
+                  //  Initialize();
                     return;
             }
         }

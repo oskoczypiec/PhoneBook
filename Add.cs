@@ -18,7 +18,7 @@ namespace PhoneBook
             AddToDatabase(firstName, lastName, number);
         }
 
-        private static void AddToDatabase(string firstName, string lastName, string number)
+        public static void AddToDatabase(string firstName, string lastName, string number)
         {
 
             var newPerson = new Person()
@@ -38,7 +38,7 @@ namespace PhoneBook
                 Console.WriteLine($"Oopsie, {e}");
             }
             Console.WriteLine($"Seems like {firstName} {lastName} with {number} number is addedd to database!\n");
-            Helper.Initialize();
+            //Helper.Initialize();
         }
     }
 }
